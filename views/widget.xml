@@ -1,0 +1,6 @@
+<Alloy>
+	<View id="wrapperView">
+		<ImageView id="imageView"/>
+		<Label id="labelView"/>
+	</View>
+</Alloy>
