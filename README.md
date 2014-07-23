@@ -29,6 +29,7 @@ And add in your *config.json*, under `dependencies`:
 
 ```javascript
 <Widget src="com.imageview.circle" id="circleView" diameter="80" ... />
+```
 
 ```javascript
 
