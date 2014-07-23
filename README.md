@@ -31,7 +31,11 @@ And add in your *config.json*, under `dependencies`:
 <Widget src="com.imageview.circle" id="circleView" diameter="80" ... />
 ```
 
+
+Args assigned in the XML will be the default and overright the attrs assigned in the controller.
 ```javascript
+
+
 
 $.circleView.attrs({
   /* default is 62*/
