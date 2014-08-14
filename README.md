@@ -14,7 +14,7 @@ gittio install com.imageview.circle
 #### Via Github
 
 ```
-git clone git@github.com:mdpauley/com.imageview.circle.git app/widgets/com.imageview.circle
+git clone https://github.com/mdpauley/com.imageview.circle.git app/widgets/com.imageview.circle
 ```
 
 And add in your *config.json*, under `dependencies`:
