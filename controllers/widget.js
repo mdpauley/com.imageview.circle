@@ -14,6 +14,7 @@ exports.init = function(args) {
 	var args = arguments[0] || {};
 	args = _.defaults(attrs, args);
 
+	args.initials = args.initials || undefined;
 	args.image = args.image || WPATH( 'images/default.png' );
 	
 	args.diameter = 2 * Math.floor(args.diameter / 2) || 120;
@@ -24,7 +25,6 @@ exports.init = function(args) {
 	args.borderColor = args.borderColor || randomColor();
 	args.backgroundColor = args.backgroundColor || randomColor();
 	
-	args.initials = args.initials || "";
 	args.font = args.font || {fontSize: $.imageView.borderRadius, fontWeight: 'bold'};
 	
 	$.wrapperView.height = $.wrapperView.width = parseInt(args.diameter, 10) + args.borderOffset;
