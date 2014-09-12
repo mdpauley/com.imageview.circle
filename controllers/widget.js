@@ -51,11 +51,8 @@ exports.init = function(args) {
 		$.labelView.text = args.initials.toUpperCase();
 	}
 
-	_.each(args, function(value, key, list) {
-		if (_.indexOf(["bottom", "top", "left", "right","backgroundColor", "borderWidth", "borderColor"], key) > -1) {
-			$.wrapperView[key] = value;
-		}
-	});
+	["bottom", "top", "left", "right","backgroundColor", "borderWidth", "borderColor"]
+    	.forEach(function(prop) { _.has(args, prop) && ($.wrapperView[prop] = args[prop]); });
 };
 
 function randomColor() {
